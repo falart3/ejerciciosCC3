@@ -1,0 +1,31 @@
+/* Exercising animations in CCS3, Francisco Lopez http://falart3.jimdofree.com */
+#container1 {
+    width: 2px;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    top: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 1.0;
+    filter: blur(0px);
+    animation: volar 5s ease-in infinite ;
+}
+
+@keyframes volar {
+    from { width: 2px; height: 2px; left: 50%; top: 300px; opacity: 1.0; filter: blur(0px);}
+    to { width: 50px; height: 50px; left: 80%; top: 600px; opacity: 0.5; filter: blur(5px);}
+}
+
+#container0 {
+    width: 355px;
+    height: 355px;
+    position: absolute;
+    left: 60%;
+    top: 250px;
+    background-size: 350px 350px;
+    background: radial-gradient(circle, #5c0067 0%, #00d5ff6c 110%);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    filter: blur(3px) brightness(50%);
+}
